@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Autologout example</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#000000">
+
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<h1>This is an example of how can be an auto-logout implemented</h1>
+<p>
+After clicking on a button "START" you will get an set amount of time which will 
+count down till 0. When 0 will reach 0 you will get an ALERT message (Which should stand for auto-logout).  
+You can always reset the count-down by clicking somewhere.
+</p>
+
+
+<div class="myContainer">
+  <button id="login"  class="doNotIncludeIntoReset">START</button>
+  <button id="logout" class="doNotIncludeIntoReset" style="display:none;">Log out</button>
+  <div style="margin-top:20px;">
+  <div id="message">Click somewhere to reset timer or you will be logged out in <span id="time"></span> secconds!</div>
+</div>
+
+<script type="text/javascript" src="plugins/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>    
+<script type="text/javascript" src="index.js"></script>            
+</body>
+</html>
